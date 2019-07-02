@@ -3,3 +3,11 @@ before_script:
 - bash scripts/build.sh
 script:
 - bash scripts/test.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: 5wp8BAhEmTf7dtHrVrH9sqIKsBr+aV/7JxrQRa45PdtgJJjzs5hbNIBECXs6Q/2yppUvHKf5GSCTY2sPUr92+1/6vXD94zHAG4mRFrf6vwY8bqW8twwa8J7Z7rgosM3F6TQxXw7QvEVdIBFKEAMMDjA/zU5prNCgFSsJh7ztq1xvfbzRadJVACfBCr1+zhiyEBD1Xc9NsbyKPEMyQiZu38WhQkPDXYeSMxHc60Wh7LuH47Ughgge3qcNiqWny2gSjTRgZHFPmFTYJbUOJsKDIulDKL9mpap/p/3+VTBNi6gzG7n/wMSQCfg68CwwRxP4GSWp+4/k/q0/k/qvU0IUwjrhohjuUa6dAeBh1BuMxGQQFtHJjGNse9L55tW9OYJlZP/rpVffjKhveJIERLrVzdcaKY2Jx+sfMc5v66e4DMA/q/06D0L2FKxmO3xLsYCspE3jpnzpE2REShrEdtSP+sWdTnZO1ILpJK8+cffR+TRyH7qZlgBEjO64Jge01rXRZfUnNBcXJldUFj3mjMUyISYNcGxMpltez2GogTvE22Hmk0d24hYn/ZwC51XuYNT4UTabBg62sAZU+jVigWYwRxULsmzSIk/Fm3t1uE0mhoRRWLflQPEJhKmnIvI73xOf3gcOfa4mAGqqqgo7/ouB1a4jlPmazYIHc3/7HsstnU0=
+  file: src/playground-go
+  on:
+    repo: andrewpopa/playground-go
+    tags: true
