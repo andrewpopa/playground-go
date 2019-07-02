@@ -1,5 +1,5 @@
 # playground-go
-Idea is to have vagrant box with very basic golang application which prints `hello world`.
+Vagrant box with very basic golang application which prints `hello world`.
 
 ## prerequisites
 - [git](https://git-scm.com/downloads)
