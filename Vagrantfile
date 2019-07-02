@@ -10,9 +10,7 @@ Vagrant.configure("2") do |config|
       vb.cpus = "1"
     end
     
-    config.vm.synced_folder "src/", "/home/vagrant/go/src/", disabled: false
     config.vm.provision "shell", path: "scripts/install_golang.sh", privileged: false
     config.vm.provision "shell", path: "scripts/build.sh", privileged: false
     
   end
-  
