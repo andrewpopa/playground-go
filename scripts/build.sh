@@ -2,11 +2,8 @@
 
 # if we are in vagrant
 if [ -d /vagrant ]; then
-  export GOPATH=/vagrant/go
   cd /vagrant/
-else
-  export GOPATH=go
 fi  
   
-cd go/src/
+cd src/
 go build -o playground-go
