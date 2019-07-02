@@ -1,4 +1,5 @@
 # playground-go
+Idea is to have vagrant box with very basic golang application which prints `hello world`.
 
 ## prerequisites
 - [git](https://git-scm.com/downloads)
@@ -6,15 +7,15 @@
 - [virtualbox](https://www.virtualbox.org/wiki/Downloads)
 
 ## how to
-```
+```bash
 git clone git@github.com:andrewpopa/playground-go.git
 cd playground-go
 vagrant up
 ```
 
 ## check the execution result
-```go
-vagrant ssh -c 'cd /home/vagrant/go/src; ./playground-go'
+```bash
+vagrant ssh -c 'cd /vagrant/src; ./playground-go'
 ```
 
 would be similar to:
